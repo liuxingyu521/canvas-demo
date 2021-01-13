@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas first</title>
+  <style>
+    .canvas {
+      /* 注意: 如果你绘制出来的图像是扭曲的, 尝试用width和height属性为<canvas>明确规定宽高，而不是使用CSS。 */
+      /* 此处设置 canvas 的高宽会影响内部绘制的形状 */
+      /* width: 300px; */
+      /* height: 300px; */
+      margin: 30px;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas class="canvas" id="canvasId" width="300" height="300">
+    该版本浏览器不支持 canvas，请升级浏览器或更换浏览器再试。
+  </canvas>
+
+  <script>
+    window.onload = () => {
+      // 获取 canvas 元素
+      const canvas = document.getElementById('canvasId')
+      // 获取绘画上下文
+      const context = canvas.getContext('2d')
+
+      context.fillRect(30, 30, 100, 100)
+    }
+  </script>
+</body>
+
+</html>

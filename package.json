@@ -1,0 +1,14 @@
+{
+  "name": "canvas-demo",
+  "scripts": {
+    "generateIndex": "node scripts/generateContent.js",
+    "preview": "yarn generateIndex && ls-server -d demos"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "liuxingyu521 <xuj_power@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ls-server": "^0.0.9"
+  }
+}
